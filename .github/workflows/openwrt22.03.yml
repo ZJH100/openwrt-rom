@@ -97,17 +97,4 @@ jobs:
       with:
         name: ${{ env.NAME }}
         path: /opt/openwrt/image
-        
-    - name: 发布到Release
-      if: ${{ env.TO_RELEASE == 'yes' }}
-      uses: softprops/action-gh-release@v1
-      with:
-        name: ${{ env.NAME }}
-        tag_name: ${{ env.TAG }}
-        body_path: /opt/openwrt/image/readme.txt
-        draft: false
-        prerelease: false
-        files: /opt/openwrt/image/*
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
