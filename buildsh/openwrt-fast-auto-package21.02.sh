@@ -224,12 +224,12 @@ pwd
 ls *.xz
 if [ $? != 0 ];then
 
-  wget -q https://downloads.openwrt.org/releases/22.03-SNAPSHOT/targets/ramips/mt7620/openwrt-imagebuilder-22.03-SNAPSHOT-ramips-mt7620.Linux-x86_64.tar.xz 
+  wget -q https://mirrors.ustc.edu.cn/openwrt/releases/22.03.3/targets/ramips/mt7620/openwrt-imagebuilder-22.03.3-ramips-mt7620.Linux-x86_64.tar.xz
 
-  tar -xf openwrt-imagebuilder-22.03-SNAPSHOT-ramips-mt7620.Linux-x86_64.tar.xz
+  tar -xf openwrt-imagebuilder-*.tar.xz
 fi
 
-cd openwrt-imagebuilder-22.03-SNAPSHOT-ramips-mt7620.Linux-x86_64
+cd openwrt-imagebuilder-*
 
 ##差异包
 val_base="\
