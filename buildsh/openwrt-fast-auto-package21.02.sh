@@ -111,7 +111,6 @@ val_office="\
  luci-ssl \
  luci-theme-bootstrap \
  px5g-wolfssl \
- qosify \
  rpcd \
  rpcd-mod-file \
  rpcd-mod-iwinfo \
