@@ -243,7 +243,12 @@ create_custom
 make image PROFILE=phicomm_k2-v22.4 FILES="files" PACKAGES="$val_base $val_office luci-i18n-base-zh-cn \
 luci-i18n-firewall-zh-cn \
 luci-i18n-opkg-zh-cn \
-luci-i18n-upnp-zh-cn "
+luci-i18n-upnp-zh-cn \
+firewall \
+iptables \
+iptables-mod-ipopt \
+kmod-ipt-ipopt \
+-firewall4"
 
 cd bin/targets/ramips/mt7620
 ll
